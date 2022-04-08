@@ -1,0 +1,44 @@
+
+Questions
+1. String and it method related, concat(), replace() 
+- Yes, it work with String
+- Yes, it returns new String, with concat, etc
+2. Can we over ride main method? 
+- No
+3. Access modfifiers in packages? which is accessible and where?
+- https://www.javatpoint.com/access-modifiers
+4. How is map internally stored?
+
+5. throw custom exception eg. if we encountered NPE, but we still has to throw IlleagalArgException how can we achieve this?
+6. Difference between C & Java wrt Platform dependent? how can it be useful?
+7. Why is C++ not platform independent?
+
+Other Java topics
+1. SQL? DML, DDL
+2. Features of Java? Multithreading etc? Thread life cycle
+3. Better example of abstraction, encapsulation? Why is it needed?
+4. Spring, Spring Boot, Spring Cloud, Microservices, Hibernate? Dockers? 
+5. String Argument? input?
+6. test methods in Junit, modifier for same?
+SuitClassAnnotation() -> method signature
+Web services methods in servlet?
+SOAP / REST
+How are both transported? Transport Portion
+String s1 has HashCode (long l), s1==null, After calling GC, what happens to code l1?
+Spring @NamedQuery?
+HTTP status 204
+can final static method overrided?
+POM Project Object Model, start tag?
+Constructor (Private and public static, which is called?)
+SQL - SUM, MAX
+String, StringBUffer - Immutable
+Mock obj in Junit
+how to real XML file in Java
+different view, same mapping?
+Delete vs truncate vs drop
+
+Other
+Proxy server?
+
+
+Coding:
