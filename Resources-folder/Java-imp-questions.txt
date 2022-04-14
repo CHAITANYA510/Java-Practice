@@ -42,3 +42,27 @@ Proxy server?
 
 
 Coding:
+
+
+
+Interview Questions
+1. SQL, DDL, DML
+2. Difference between Drop vs Truncate
+3. How to enter lakhs of records into DB? Time constraints?
+4. Keywords, Insert, update, CRUD in SQL
+5. Indexing in table
+6. Refpointer something in DB
+7. How to store Password in DB? encryption?
+8. Load testing, Stress testing?
+9. Test plan, req docs?
+10. How to upload data into database?
+11. Security testing?
+12. Flag to indicate accepted claim, in a table
+13. How to point out 
+14. If 40/50 TC are failed, what to do? How to analyse?
+15. Why to hire you? If you leave after learning?
+16. Checked & Unchecked exception
+
+Improvement:
+1. Why should I hire you if you don't have SQL skills?
+Ans: I have a leaning attitude, hence my manager have allocated me to 4 different projects, as ky performance spoke for myself, I love to learn, hence  I can learn SQL as well, in short amount of time
