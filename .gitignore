@@ -1,3 +1,3 @@
 #Ignore microservices Git Resources - folder
 Source-folders/Microservices/Git_Resources
-Source-folders/Microservices/*/target
+#Source-folders/Microservices/*/target
