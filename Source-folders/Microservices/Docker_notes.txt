@@ -1,0 +1,64 @@
+Docker:
+
+If you are using Window 10 and are using docker toolbox
+=> Use 192.168.99.100 instead of localhost.
+Note: If 192.168.99.100 does not work, you can find the IP by using the command "docker-machine ip"
+
+To start:
+docker run -p 5000:5000 in28min/todo-rest-api-h2:1.0.0.RELEASE (mark container ID)
+openzipkin/zipkin:2.23
+
+To get list of dockers running: docker ps / docker container ls / docker container ls -a(all including the terminated onces)
+
+To stop: https://adamtheautomator.com/docker-stop-containers/
+
+To detach the container from cmd/PS: docker run -p 5000:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
+=> Mark the docker ID (long string) for further operations
+Here -p ==> port 5000 of Docker is mapped and exposed to port 5000 of Windows
+Here -d ==> signifies that docker will b detached from the cmd/PS, even if we stop or terminate the mcd/PS it will run in Background.
+
+To get logs:
+docker logs (container ID)
+
+To get continous logs: 
+docker logs -f (container ID)
+
+To run Zipkin
+
+docker run -p 9411:9411 openzipkin/zipkin
+
+<dependency>
+	<groupId>org.springframework.cloud</groupId>
+	<artifactId>spring-cloud-starter-sleuth</artifactId>
+</dependency>
+
+== for adding unique id for each request to trace it across MS's
+
+For uploading to Docker
+
+https://github.com/in28minutes/spring-microservices-v2/tree/main/04.docker
+
+to create an snapshot for uploading on Docker:
+==> For checkup -> clean compile verify -e
+==> For actual (Maven Goal) ==> spring-boot:build-image -DskipTests
+
+Run Zipkin
+openzipkin/zipkin
+Currency exchange service
+docker.io/chaitanya510/ms.v1-currency-exchange-service:0.0.1-SNAPSHOT
+Naming Server
+docker.io/chaitanya510/ms.v1-naming-server:0.0.1-SNAPSHOT
+Currency converion services
+docker.io/chaitanya510/ms.v1-currency-conversion-service:0.0.1-SNAPSHOT
+API Gateway
+docker.io/chaitanya510/ms.v1-api-gateway:0.0.1-SNAPSHOT
+
+docker run -p 9411:9411 openzipkin/zipkin
+docker run -p 8000:8000 chaitanya510/ms.v1-currency-exchange-service:0.0.1-SNAPSHOT
+docker run -p 8761:8761 chaitanya510/ms.v1-naming-server:0.0.1-SNAPSHOT
+docker run -p 8100:8100 chaitanya510/ms.v1-currency-conversion-service:0.0.1-SNAPSHOT
+docker run -p 8765:8765 chaitanya510/ms.v1-api-gateway:0.0.1-SNAPSHOT
+
+Troubleshooting ::
+https://github.com/in28minutes/spring-microservices-v2/blob/main/03.microservices/01-step-by-step-changes/microservices-v2-1.md#docker-section---connect-microservices-with-zipkin
+
