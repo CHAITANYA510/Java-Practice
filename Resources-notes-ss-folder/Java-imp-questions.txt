@@ -1,3 +1,16 @@
+Interface?
+The Interface is a medium to interact between user and system devices. For example, in our real life, if we consider the interface to be given as an example is the air condition, bike, ATM machine, etc. Similarly, in Java, Interface also plays the same role; it is considered as an interactive medium between the system and the end-user. However, the main aim of the interface in java is to achieve 100% abstraction by hiding actual implementation to the user and thus making applications a bit user-friendly. Therefore, it basically comprises of static, abstract, and final methods.
+
+Example:
+
+
+Abstraction?
+Abstraction is one of the key concepts of object-oriented programming (OOP) languages. Its main goal is to handle complexity by hiding unnecessary details from the user. That enables the user to implement more complex logic on top of the provided abstraction without understanding or even thinking about all the hidden complexity.
+That’s a very generic concept that’s not limited to object-oriented programming. You can find it everywhere in the real world.
+Objects in an OOP language provide an abstraction that hides the internal implementation details, you just need to know which methods of the object are available to call and which input parameters are needed to trigger a specific operation. But you don’t need to understand how this method is implemented and which kinds of actions it has to perform to create the expected result.
+
+
+=============
 
 Questions
 1. String and it method related, concat(), replace() 
